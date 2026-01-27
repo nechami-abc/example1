@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="../css/form2.css">
+    <link rel="stylesheet" href="../css/cssAll.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="../index.html" class="logo"><img src="../img/-1.png"/></a>
+    <nav class="nav">
+      <a href="../index.html">דף הבית</a>
+      <a href="Proudct.html">מוצרים</a>
+      <a  href="call.html#call">צור קשר</a>
+      <a href="about.html#about">אודות</a>
+      <a href="form.html"  class="nav_this">הצטרפות</a>
+    </nav>
+  </header>
+  <main>
+    <div class="help">
+    <a href="../index.html"><img src="../gif/system-regular-140-help-center.gif" alt="help-you"/></a>
+    <a href="#call"><img src="../gif/system-regular-3-disabled.gif" alt="help-acessbility"/></a>
+  </div>
+    <section class="form-wrapper">
+    <h1>גם אתה יכול להפוך לשותף-</h1>
+    <h2>טופס הרשמה</h2>
+    <form action="../html/thanks.html" class="form">
+
+      <label for="id">תעודת זהות</label>
+      <input type="text" id="id" name="id" maxlength="9" pattern="\d{9}" required>
+
+      <label for="name">שם פרטי ומשפחה</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="mail">מייל</label>
+      <input type="email" id="mail" name="email" required>
+
+      <label for="phone">טלפון</label>
+      <input type="tel" id="phone" name="phone">
+
+      <fieldset class="no-border">
+        <legend>תיאור הרעיון</legend>
+        <textarea
+          id="idea"
+          name="idea"
+          maxlength="255"
+          placeholder="כתבו בקצרה את הרעיון שלכם"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>קטגוריית פטנט</legend>
+        <select name="type" required>
+          <option value="">בחר קטגוריה</option>
+          <option value="אוכל">אוכל</option>
+          <option value="תחזוקת בית">תחזוקת בית</option>
+          <option value="סדר וניקיון">סדר וניקיון</option>
+          <option value="אחר">אחר</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">שליחת הרעיון</button>
+    </section>
+    </form>
+    </main>
+
+
+
+<footer   id="call">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <h5>צור קשר</h5>
+          <ul>
+            <li class="li">שרות לקוחות: *6043</li>
+            <li class="li">אימייל: info@patenta.com</li>
+            <li class="li">אתר: www.patenta.com</li>
+          </ul>
+        </div>
+        <div class="col col2">
+          <h5>הסניפים שלנו</h5>
+          <ul>
+            <li class="li">ירושלים - מרכז הפיתוח והחזון</li>
+            <li class="li">נתניה - מערך הלוגיסטי המתקדם</li>
+            <li class="li">בני ברק - לב התפעול והניהול</li>
+          </ul>
+        </div>
+        <div class="col col3">
+          <h5>ניתוב מהיר</h5>
+          <nav class="nav2">
+            <ul class="ul">
+              <li class="li"><a href="../index.html">דף הבית</a></li>
+              <li class="li"><a href="Proudct.html">מוצרי פטנט</a></li>
+              <li class="li"><a href="form.html">הצטרפות</a></li>
+              <li class="li"><a href="../index.html#about">אודותנו</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p id="devolop">developer by nechami shpigler</p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

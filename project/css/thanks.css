@@ -1,0 +1,49 @@
+:root {
+    --purple: #4B0082;
+    --yellow: #FFD700;
+    --light: #F5F5F5;
+    --accent-blue: #4FD1C5;
+}
+
+body {
+
+    background: radial-gradient(circle at center, #9d73d8 0%, #4d1c91 35%, #250a42 70%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    direction: rtl;
+}
+
+.thanks-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    color: #4b0082;
+    max-width: 400px;
+    transition: all 0.3s ease;
+
+}
+
+.back-home {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #4b0082;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.thanks-card:hover {
+    background-color: rgb(97, 75, 130);
+    color: var(--yellow);
+    border: 2px solid yellow;
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.8);
+    transform: translateY(-5px);
+}

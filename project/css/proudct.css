@@ -1,0 +1,156 @@
+:root {
+  --yellow: #ffcc00;
+  --purple: #4d1c91;
+    --accent-blue: #4FD1C5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  background: radial-gradient(
+    circle at center,
+    #9d73d8 0%,
+    #4d1c91 35%,
+    #250a42 70%
+  );
+  min-height: 100vh;
+}
+
+.cards_section h1{
+text-align: center;
+margin-top: 83px;
+color: var(--yellow);
+font-size: 50px;
+
+}
+
+.all_cards {
+  padding: 80px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 30px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 5px solid var(--yellow);
+  padding: 20px;
+  border-radius: 15px;
+  width: 310px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  overflow: hidden; 
+  position: relative;
+}
+
+
+.product-card a {
+  display: block;    
+  width: 100%;      
+  text-decoration: none;
+  margin-bottom: 15px; 
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+.product-card .icon {
+  border-radius: 50px; 
+  padding: 12px 20px;
+  background:rgb(174, 212, 235);
+  color: var(--purple);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 0 20px lightblue;
+  transition: all 0.3s ease;
+}
+
+.product-card h3 {
+  color: var(--yellow);
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  line-height: 1.5;   
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.product-card a:hover .icon {
+  background: white;
+  transform: scale(1.05);
+}
+
+.about_proudct{
+  position: absolute;
+  bottom: 25px;
+  left: 23px;
+  color: var(--accent-blue);
+  font-weight:700;
+  font-size: 25px;
+}
+
+.about_proudct::before{
+        content: "\f0a4";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 400;
+}
+
+.about_proudct:active{
+color: rgb(255, 142, 212);
+}
+
+@media screen and (max-width:768px) {
+  .all_cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 35px;
+  }
+  .product-card{
+    width: 90%;
+    max-width: 390px;
+  }
+  }
+
+@media screen and (max-width: 480px) {
+  .all_cards {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;      
+    max-width: 320px;  
+    margin: 0 auto;    
+  }
+
+  .cards_section h1 {
+    margin-top: 30px;
+    font-size: 22px;
+  }
+}
+  

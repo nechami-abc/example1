@@ -1,0 +1,134 @@
+:root {
+  --purple: #4B0082;
+  --yellow: #FFD700;
+  --light: #F5F5F5;
+  --accent-blue: #4FD1C5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  background-image: url(../img/screem_from.png);
+  background-size: 100% auto;
+  overflow-x: hidden; 
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 0;
+  position: relative;
+  padding: 0 20px; 
+}
+
+.form-wrapper h1,
+.form-wrapper h2 {
+  color: var(--accent-blue);
+  line-height: 1.2; 
+  text-align: center;
+}
+
+form {
+  width: 100%; 
+  max-width: 380px; 
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 90px 5px lightgoldenrodyellow;
+  text-align: right;
+  position: relative;
+
+}
+
+label {
+  margin-top: 16px;
+  font-weight: bold;
+  color: var(--accent-blue);
+  position: relative;
+  padding-right: 14px;
+  display: block;
+}
+
+label::before {
+  content: "*";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #bb9cff;
+  opacity: 0.6;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #bbd6ff;
+  font-size: 14px;
+  direction: rtl;
+  text-align: right;
+  resize: vertical;
+  max-height: 120px;
+  outline: none;
+  color: var(--accent-blue);
+}
+
+button {
+  margin-top: 24px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #4b0082;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+button:hover {
+   transform:translateY(-5px);
+   background-color: var(--yellow);
+   box-shadow:  0 0 10px 5px var(--accent-blue);
+   opacity: 45%;
+   color: var(--purple);
+
+}
+
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--yellow);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+  .form-wrapper {
+    margin: 30px 0;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .form-wrapper h1 {
+    font-size: 1.6rem;
+  }
+}
